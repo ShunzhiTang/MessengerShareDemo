@@ -9,8 +9,16 @@
 #import "AppDelegate.h"
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKMessengerShareKit/FBSDKMessengerShareKit.h>
 
 @interface AppDelegate ()
+//<FBSDKMessengerURLHandlerDelegate>
+
+//@property (nonatomic ,strong) FBSDKMessengerURLHandler *messengerUrlHandler;
+//
+//@property (nonatomic ,strong) FBSDKMessengerURLHandlerOpenFromComposerContext *composerContext ;
+//
+//@property (nonatomic ,strong) FBSDKMessengerURLHandlerReplyContext *replyContext;
 
 @end
 
@@ -22,6 +30,11 @@
     
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
+    
+//    _messengerUrlHandler = [[FBSDKMessengerURLHandler alloc] init];
+//    _messengerUrlHandler.delegate = self;
+    
+    
     
     return YES;
 }
@@ -50,13 +63,33 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+//
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+//    return [[FBSDKApplicationDelegate sharedInstance] application:application
+//                                                          openURL:url
+//                                                sourceApplication:sourceApplication
+//                                                       annotation:annotation
+//            ];
+//}
+//
+//#pragma mark： messengerUrlHandler
+//
+//
+//- (void)messengerURLHandler:(FBSDKMessengerURLHandler *)messengerURLHandler
+//didHandleOpenFromComposerWithContext:(FBSDKMessengerURLHandlerOpenFromComposerContext *)context;
+//{
+//    _composerContext = context;
+//}
+//
+///*
+// * When people enter your app through the "Reply" button on content
+// * this delegate function will be called.
+// */
+//- (void)messengerURLHandler:(FBSDKMessengerURLHandler *)messengerURLHandler
+//  didHandleReplyWithContext:(FBSDKMessengerURLHandlerReplyContext *)context;
+//{
+//    _replyContext = context;
+//}
 
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
-    return [[FBSDKApplicationDelegate sharedInstance] application:application
-                                                          openURL:url
-                                                sourceApplication:sourceApplication
-                                                       annotation:annotation
-            ];
-}
 
 @end
