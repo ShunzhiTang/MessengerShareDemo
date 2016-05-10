@@ -34,7 +34,34 @@
 //    _messengerUrlHandler = [[FBSDKMessengerURLHandler alloc] init];
 //    _messengerUrlHandler.delegate = self;
     
+    // 动态的 添加 加入 3D touch  功能
     
+    
+    // 栏目1
+    
+//    UIApplicationShortcutIcon  *icon1 =  [UIApplicationShortcutIcon  iconWithType:UIApplicationShortcutIconTypeHome];
+    
+    UIApplicationShortcutIcon  *icon1 = [UIApplicationShortcutIcon iconWithTemplateImageName:@"touch_cart_icon"];
+    
+    UIApplicationShortcutItem  *item1 = [[UIApplicationShortcutItem  alloc] initWithType:@"item1"localizedTitle:@"购物车" localizedSubtitle:nil icon:icon1  userInfo:nil];
+    
+    // 栏目2
+    
+    
+    UIApplicationShortcutIcon  *icon2 =  [UIApplicationShortcutIcon  iconWithType:UIApplicationShortcutIconTypeSearch];
+    
+    UIApplicationShortcutItem  *item2 = [[UIApplicationShortcutItem  alloc] initWithType:@"item2"localizedTitle:@"搜索" localizedSubtitle:@"子标题" icon:icon2  userInfo:nil];
+    
+    UIApplicationShortcutIcon  *icon3 =  [UIApplicationShortcutIcon  iconWithType:UIApplicationShortcutIconTypeShare];
+    
+    UIApplicationShortcutItem  *item3 = [[UIApplicationShortcutItem  alloc] initWithType:@"item3"localizedTitle:@"分享" localizedSubtitle:nil icon:icon3  userInfo:nil];
+    
+    UIApplicationShortcutIcon  *icon4 =  [UIApplicationShortcutIcon  iconWithType:UIApplicationShortcutIconTypeContact];
+    
+    UIApplicationShortcutItem  *item4 = [[UIApplicationShortcutItem  alloc] initWithType:@"item4"localizedTitle:@"联系人" localizedSubtitle:nil icon:icon4  userInfo:nil];
+    
+    
+    application.shortcutItems = @[item1 , item2 ,item3 , item4];
     
     return YES;
 }
@@ -90,6 +117,22 @@
 //{
 //    _replyContext = context;
 //}
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(UIApplicationShortcutItem *)shortcutItem completionHandler:(void (^)(BOOL))completionHandler{
+    
+    NSString *itemType = shortcutItem.type;
+    
+    if([@"item1" isEqualToString:itemType]){
+     
+        NSLog(@"第一个");
+        
+    }
+    else if([@"item2" isEqualToString:itemType]){
+        
+        NSLog(@"第er个");
+    }
+}
+
 
 
 @end

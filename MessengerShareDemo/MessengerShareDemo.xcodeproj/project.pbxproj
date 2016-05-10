@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2424EA301CE18DBC0030A00A /* 80.png in Resources */ = {isa = PBXBuildFile; fileRef = 2424EA2F1CE18DBC0030A00A /* 80.png */; };
+		2424EA321CE193E90030A00A /* touch_cart_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2424EA311CE193E90030A00A /* touch_cart_icon@2x.png */; };
 		24C8732B1CE02A81006D0B9F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8732A1CE02A81006D0B9F /* main.m */; };
 		24C8732E1CE02A82006D0B9F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8732D1CE02A82006D0B9F /* AppDelegate.m */; };
 		24C873311CE02A82006D0B9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C873301CE02A82006D0B9F /* ViewController.m */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2424EA2F1CE18DBC0030A00A /* 80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 80.png; sourceTree = "<group>"; };
+		2424EA311CE193E90030A00A /* touch_cart_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "touch_cart_icon@2x.png"; sourceTree = "<group>"; };
 		24C873261CE02A81006D0B9F /* MessengerShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessengerShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C8732A1CE02A81006D0B9F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24C8732C1CE02A81006D0B9F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 		24C873291CE02A81006D0B9F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2424EA311CE193E90030A00A /* touch_cart_icon@2x.png */,
+				2424EA2F1CE18DBC0030A00A /* 80.png */,
 				24C873441CE03D24006D0B9F /* mobobox.png */,
 				24C8732A1CE02A81006D0B9F /* main.m */,
 			);
@@ -147,8 +153,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2424EA301CE18DBC0030A00A /* 80.png in Resources */,
 				24C873451CE03D24006D0B9F /* mobobox.png in Resources */,
 				24C873391CE02A82006D0B9F /* LaunchScreen.storyboard in Resources */,
+				2424EA321CE193E90030A00A /* touch_cart_icon@2x.png in Resources */,
 				24C873361CE02A82006D0B9F /* Assets.xcassets in Resources */,
 				24C873341CE02A82006D0B9F /* Main.storyboard in Resources */,
 			);
@@ -324,6 +332,7 @@
 				24C8733F1CE02A82006D0B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
